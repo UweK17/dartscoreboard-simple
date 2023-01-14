@@ -31,7 +31,13 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  gap: .5%;
   height: 50%;
+}
+
+.numpad:hover,
+.submit:hover {
+  background-color: rgb(83, 199, 234);
 }
 
 .numpad {
