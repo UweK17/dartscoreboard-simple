@@ -2,16 +2,21 @@ import React, {useState} from 'react';
 import './App.css';
 
 function App() {
-
+  
   const [player1Score, setPlayer1Score] = useState(301);
+
+  const submitHandler = () => {
+    setPlayer1Score(player1Score-100);
+  }
+
   return (
     <div className="App">
       <div className='partitionScreen'>
         <div className="player1">
           <div className='statistics'>
             <div>Player 1</div>
-            <div>Start Score: {player1Score}</div>
-            <div>Aktueller Score: </div>
+            <div>Start Score: 301</div>
+            <div>Aktueller Score: {player1Score}</div>
           </div>
           <div className="numberInputPlayer1">  
             <button className="numpad">1</button>
@@ -27,9 +32,9 @@ function App() {
             <button className="numpad">0</button>
             <button className="numpad">Delete</button>
           </div>
-          <div className="scoreSubmit">
+          <div className="scoreSubmit" onClick={submitHandler}>
             <div className='display'>Display</div>
-            <button className="submit">Submit Score</button>
+            <button className="submit" >Submit Score</button>
           </div>
         </div>
         <div className="player2">
