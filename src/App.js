@@ -1,13 +1,16 @@
+import React, {useState} from 'react';
 import './App.css';
 
 function App() {
+
+  const [player1Score, setPlayer1Score] = useState(301);
   return (
     <div className="App">
       <div className='partitionScreen'>
         <div className="player1">
           <div className='statistics'>
             <div>Player 1</div>
-            <div>Start Score: </div>
+            <div>Start Score: {player1Score}</div>
             <div>Aktueller Score: </div>
           </div>
           <div className="numberInputPlayer1">  
