@@ -48,7 +48,7 @@ function App() {
         <div className="player1">
           <div className='statistics'>
             <div>Player 1</div>
-            <div>Start Score: {player1Score}</div>
+            <div>Score: {player1Score}</div>
             <form onSubmit={handleSubmitPlayer1}>
               <input 
                 name="score"
@@ -62,45 +62,51 @@ function App() {
         </div>
 
         <div className="player2">
-          <div>Player 2</div>
-          <div>Start Score: {player2Score}</div>
-            <form onSubmit={handleSubmitPlayer2}>
-              <input 
-                name="score"
-                type="number"
-                value={throwScorePlayer2}
-                autoFocus
-                onChange={e => handleChangePlayer2(e.target.value)}
-              />
-            </form>
+          <div className="statistics">
+            <div>Player 2</div>
+            <div>Score: {player2Score}</div>
+              <form onSubmit={handleSubmitPlayer2}>
+                <input
+                  name="score"
+                  type="number"
+                  value={throwScorePlayer2}
+                  autoFocus
+                  onChange={e => handleChangePlayer2(e.target.value)}
+                />
+              </form>
+          </div>
         </div>
 
         <div className="player3">
-          <div>Player 3</div>
-          <div>Start Score: {player3Score}</div>
-            <form onSubmit={handleSubmitPlayer3}>
-              <input 
-                name="score"
-                type="number"
-                value={throwScorePlayer3}
-                autoFocus
-                onChange={e => handleChangePlayer3(e.target.value)}
-              />
-            </form>
+          <div className="statistics">
+            <div>Player 3</div>
+            <div>Score: {player3Score}</div>
+              <form onSubmit={handleSubmitPlayer3}>
+                <input
+                  name="score"
+                  type="number"
+                  value={throwScorePlayer3}
+                  autoFocus
+                  onChange={e => handleChangePlayer3(e.target.value)}
+                />
+              </form>
+          </div>
         </div>
 
-        <div className="player4">
-          <div>Player 4</div>
-          <div>Start Score: {player4Score}</div>
-            <form onSubmit={handleSubmitPlayer4}>
-              <input 
-                name="score"
-                type="number"
-                value={throwScorePlayer4}
-                autoFocus
-                onChange={e => handleChangePlayer4(e.target.value)}
-              />
-            </form>
+        <div className="statistics">
+          <div className="player4">
+            <div>Player 4</div>
+            <div>Score: {player4Score}</div>
+              <form onSubmit={handleSubmitPlayer4}>
+                <input
+                  name="score"
+                  type="number"
+                  value={throwScorePlayer4}
+                  autoFocus
+                  onChange={e => handleChangePlayer4(e.target.value)}
+                />
+              </form>
+          </div>
         </div>
 
       </div>

@@ -25,40 +25,14 @@
 .statistics {
   text-align: left;
   font-size: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.numberInputPlayer1 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: .5%;
-  height: 50%;
-}
 
-.numpad:hover,
-.submit:hover {
-  background-color: rgb(83, 199, 234);
-}
-
-.numpad {
-  font-size: 2rem;
-}
-
-.scoreSubmit {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 25%;
-}
-
-.display {
-  border: 2px solid black;
-  margin: 2%;
-  padding: 1%;
-}
-
-.submit {
-  border: 2px solid black;
-  margin: 2%;
-  padding: 1%;
-  font-size: 2rem;
+input {
+  width: 30%;
+  min-height: 100px;
+  left: 35%;
+  font-size: 5rem;
 }
