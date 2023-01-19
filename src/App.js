@@ -62,9 +62,9 @@ function App() {
 
   function toggleActiveStyle(index) {
     if(appState.objects[index] === appState.activeObject) {
-      return "btn active";
+      return "active";
     } else {
-      return "btn inactive";
+      return "inactive";
     }
   }
 
@@ -73,9 +73,9 @@ function App() {
       <div className='partitionScreen'>
         <div className={`player1 ${toggleActiveStyle(0)}`} onClick={() =>{toggleActive(0)}}>
           <div className='statistics'>
-            <div>Player 1</div>
+            <div className="playerName">Player 1</div>
           {/* <PlayerButton /> */}
-            <div>Score: {player1Score}</div>
+            <div className="playerScore">Score: {player1Score}</div>
             <form onSubmit={handleSubmitPlayer1}>
               <input 
                 name="score"
@@ -84,16 +84,16 @@ function App() {
                 autoFocus
                 onChange={e => handleChangePlayer1(e.target.value)}
               />
-              {/* <SubmitButton /> */}
+              <button className="btn">Submit</button>
             </form>
           </div>
         </div>
 
         <div className={`player2 ${toggleActiveStyle(1)}`} onClick={() =>{toggleActive(1)}}>
           <div className="statistics">
-          <div>Player 2</div>
+          <div className="playerName">Player 2</div>
           {/* <PlayerButton /> */}
-            <div>Score: {player2Score}</div>
+            <div className="playerScore">Score: {player2Score}</div>
               <form onSubmit={handleSubmitPlayer2}>
                 <input
                   name="score"
@@ -102,16 +102,16 @@ function App() {
                   autoFocus
                   onChange={e => handleChangePlayer2(e.target.value)}
                 />
-                {/* <SubmitButton /> */}
+                <button className="btn">Submit</button>
               </form>
           </div>
         </div>
 
         <div className={`player3 ${toggleActiveStyle(2)}`} onClick={() =>{toggleActive(2)}}>
           <div className="statistics">
-          <div>Player 3</div>
+          <div className="playerName">Player 3</div>
           {/* <PlayerButton /> */}
-            <div>Score: {player3Score}</div>
+            <div className="playerScore">Score: {player3Score}</div>
               <form onSubmit={handleSubmitPlayer3}>
                 <input
                   name="score"
@@ -120,16 +120,16 @@ function App() {
                   autoFocus
                   onChange={e => handleChangePlayer3(e.target.value)}
                 />
-                {/* <SubmitButton /> */}
+                <button className="btn">Submit</button>
               </form>
           </div>
         </div>
 
         <div className={`player4 ${toggleActiveStyle(3)}`} onClick={() =>{toggleActive(3)}}>
           <div className="statistics">
-          <div>Player 4</div>
+          <div className="playerName">Player 4</div>
           {/* <PlayerButton /> */}
-            <div>Score: {player4Score}</div>
+            <div className="playerScore">Score: {player4Score}</div>
               <form onSubmit={handleSubmitPlayer4}>
                 <input
                   name="score"
@@ -138,7 +138,7 @@ function App() {
                   autoFocus
                   onChange={e => handleChangePlayer4(e.target.value)}
                 />
-                {/* <SubmitButton /> */}
+                <button className="btn">Submit</button>
               </form>
           </div>
         </div>
