@@ -21,18 +21,22 @@ function App() {
   function handleSubmitPlayer1 (e) {
     e.preventDefault();
     setPlayer1Score(player1Score-throwScorePlayer1);
+    setThrowScorePlayer1("");
   }
   function handleSubmitPlayer2 (e) {
     e.preventDefault();
     setPlayer2Score(player2Score-throwScorePlayer2);
+    setThrowScorePlayer2("");
   }
   function handleSubmitPlayer3 (e) {
     e.preventDefault();
     setPlayer3Score(player3Score-throwScorePlayer3);
+    setThrowScorePlayer3("");
   }
   function handleSubmitPlayer4 (e) {
     e.preventDefault();
     setPlayer4Score(player4Score-throwScorePlayer4);
+    setThrowScorePlayer4("");
   }
 
   function handleChangePlayer1(value) {
