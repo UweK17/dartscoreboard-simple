@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
+// import PlayerButton from './components/PlayerButton.js';
+// import SubmitButton from './components/SubmitButton.js';
 
 function App() {
   
@@ -11,7 +13,6 @@ function App() {
   const [player2Score, setPlayer2Score] = useState(301);
   const [player3Score, setPlayer3Score] = useState(301);
   const [player4Score, setPlayer4Score] = useState(301);
-  const [active, setActive] = useState(null);
 
   function handleSubmitPlayer1 (e) {
     e.preventDefault();
@@ -43,12 +44,12 @@ function App() {
     setThrowScorePlayer4(value);
   }
 
-  return (
+   return (
     <div className="App">
       <div className='partitionScreen'>
         <div className="player1">
           <div className='statistics'>
-            <button class="btn">Player 1</button>
+          {/* <PlayerButton /> */}
             <div>Score: {player1Score}</div>
             <form onSubmit={handleSubmitPlayer1}>
               <input 
@@ -58,13 +59,14 @@ function App() {
                 autoFocus
                 onChange={e => handleChangePlayer1(e.target.value)}
               />
+              {/* <SubmitButton /> */}
             </form>
           </div>
         </div>
 
         <div className="player2">
           <div className="statistics">
-          <button class="btn">Player 2</button>
+          {/* <PlayerButton /> */}
             <div>Score: {player2Score}</div>
               <form onSubmit={handleSubmitPlayer2}>
                 <input
@@ -74,13 +76,14 @@ function App() {
                   autoFocus
                   onChange={e => handleChangePlayer2(e.target.value)}
                 />
+                {/* <SubmitButton /> */}
               </form>
           </div>
         </div>
 
         <div className="player3">
           <div className="statistics">
-          <button class="btn">Player 3</button>
+          {/* <PlayerButton /> */}
             <div>Score: {player3Score}</div>
               <form onSubmit={handleSubmitPlayer3}>
                 <input
@@ -90,13 +93,14 @@ function App() {
                   autoFocus
                   onChange={e => handleChangePlayer3(e.target.value)}
                 />
+                {/* <SubmitButton /> */}
               </form>
           </div>
         </div>
 
         <div className="statistics">
           <div className="player4">
-          <button class="btn">Player 4</button>
+          {/* <PlayerButton /> */}
             <div>Score: {player4Score}</div>
               <form onSubmit={handleSubmitPlayer4}>
                 <input
@@ -106,6 +110,7 @@ function App() {
                   autoFocus
                   onChange={e => handleChangePlayer4(e.target.value)}
                 />
+                {/* <SubmitButton /> */}
               </form>
           </div>
         </div>
