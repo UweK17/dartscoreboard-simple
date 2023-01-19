@@ -77,14 +77,14 @@ function App() {
           {/* <PlayerButton /> */}
             <div className="playerScore">Score: {player1Score}</div>
             <form onSubmit={handleSubmitPlayer1}>
-              <input 
-                name="score"
-                type="number"
-                value={throwScorePlayer1}
-                autoFocus
-                onChange={e => handleChangePlayer1(e.target.value)}
-              />
-              <button className="btn">Submit</button>
+                <input
+                  name="score"
+                  type="number"
+                  value={throwScorePlayer1}
+                  autoFocus
+                  onChange={e => handleChangePlayer1(e.target.value)}
+                />
+                <button className="btn">Submit</button>
             </form>
           </div>
         </div>
