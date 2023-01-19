@@ -63,12 +63,9 @@ function App() {
    return (
     <div className="App">
       <div className='partitionScreen'>
-        <div className="player1">
+        <div className={`player1 ${toggleActiveStyle(0)}`} onClick={() =>{toggleActive(0)}}>
           <div className='statistics'>
-            <button 
-              key={appState.objects[0]}
-              className={toggleActiveStyle(0)}
-              onClick={() =>{toggleActive(0)}}>Player 1</button>
+            <div>Player 1</div>
           {/* <PlayerButton /> */}
             <div>Score: {player1Score}</div>
             <form onSubmit={handleSubmitPlayer1}>
@@ -84,12 +81,9 @@ function App() {
           </div>
         </div>
 
-        <div className="player2">
+        <div className={`player2 ${toggleActiveStyle(1)}`} onClick={() =>{toggleActive(1)}}>
           <div className="statistics">
-          <button 
-            key={appState.objects[1]}
-            className={toggleActiveStyle(1)}
-            onClick={() =>{toggleActive(1)}}>Player 2</button>
+          <div>Player 2</div>
           {/* <PlayerButton /> */}
             <div>Score: {player2Score}</div>
               <form onSubmit={handleSubmitPlayer2}>
@@ -105,12 +99,9 @@ function App() {
           </div>
         </div>
 
-        <div className="player3">
+        <div className={`player3 ${toggleActiveStyle(2)}`} onClick={() =>{toggleActive(2)}}>
           <div className="statistics">
-          <button 
-            key={appState.objects[2]}
-            className={toggleActiveStyle(2)}
-            onClick={() =>{toggleActive(2)}}>Player 3</button>
+          <div>Player 3</div>
           {/* <PlayerButton /> */}
             <div>Score: {player3Score}</div>
               <form onSubmit={handleSubmitPlayer3}>
@@ -126,13 +117,9 @@ function App() {
           </div>
         </div>
 
-        <div className="player4">
+        <div className={`player4 ${toggleActiveStyle(3)}`} onClick={() =>{toggleActive(3)}}>
           <div className="statistics">
-          <button 
-            key={appState.objects[3]}
-            className={toggleActiveStyle(3)}
-            onClick={() =>{toggleActive(3)}}
-            >Player 4</button>
+          <div>Player 4</div>
           {/* <PlayerButton /> */}
             <div>Score: {player4Score}</div>
               <form onSubmit={handleSubmitPlayer4}>

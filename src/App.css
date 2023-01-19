@@ -48,9 +48,9 @@ input {
 }
 
 .inactive {
-  background-color: grey;
+  background-color: rgb(230, 85, 85);
 }
 
 .active {
-  background-color: coral;
+  background-color: rgb(161, 236, 106);
 }
