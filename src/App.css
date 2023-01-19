@@ -47,6 +47,10 @@ input {
   cursor: pointer;
 }
 
+.inactive {
+  background-color: grey;
+}
+
 .active {
   background-color: coral;
 }
