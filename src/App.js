@@ -11,6 +11,7 @@ function App() {
   const [player2Score, setPlayer2Score] = useState(301);
   const [player3Score, setPlayer3Score] = useState(301);
   const [player4Score, setPlayer4Score] = useState(301);
+  const [active, setActive] = useState(null);
 
   function handleSubmitPlayer1 (e) {
     e.preventDefault();
@@ -47,7 +48,7 @@ function App() {
       <div className='partitionScreen'>
         <div className="player1">
           <div className='statistics'>
-            <div>Player 1</div>
+            <button class="btn">Player 1</button>
             <div>Score: {player1Score}</div>
             <form onSubmit={handleSubmitPlayer1}>
               <input 
@@ -63,7 +64,7 @@ function App() {
 
         <div className="player2">
           <div className="statistics">
-            <div>Player 2</div>
+          <button class="btn">Player 2</button>
             <div>Score: {player2Score}</div>
               <form onSubmit={handleSubmitPlayer2}>
                 <input
@@ -79,7 +80,7 @@ function App() {
 
         <div className="player3">
           <div className="statistics">
-            <div>Player 3</div>
+          <button class="btn">Player 3</button>
             <div>Score: {player3Score}</div>
               <form onSubmit={handleSubmitPlayer3}>
                 <input
@@ -95,7 +96,7 @@ function App() {
 
         <div className="statistics">
           <div className="player4">
-            <div>Player 4</div>
+          <button class="btn">Player 4</button>
             <div>Score: {player4Score}</div>
               <form onSubmit={handleSubmitPlayer4}>
                 <input
