@@ -22,21 +22,25 @@ function App() {
     e.preventDefault();
     setPlayer1Score(player1Score-throwScorePlayer1);
     setThrowScorePlayer1("");
+    toggleActive(1);
   }
   function handleSubmitPlayer2 (e) {
     e.preventDefault();
     setPlayer2Score(player2Score-throwScorePlayer2);
     setThrowScorePlayer2("");
+    toggleActive(2);
   }
   function handleSubmitPlayer3 (e) {
     e.preventDefault();
     setPlayer3Score(player3Score-throwScorePlayer3);
     setThrowScorePlayer3("");
+    toggleActive(3);
   }
   function handleSubmitPlayer4 (e) {
     e.preventDefault();
     setPlayer4Score(player4Score-throwScorePlayer4);
     setThrowScorePlayer4("");
+    toggleActive(0);
   }
 
   function handleChangePlayer1(value) {
